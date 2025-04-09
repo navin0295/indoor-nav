@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Floor Map | CampusNav</title>
+    <link rel="stylesheet" href="/frontend/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container navbar">
+            <div class="logo"></div>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/map">Interactive Map</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="map-container">
+            <div class="map-header">
+                <h1>First Floor Navigation</h1>
+            </div>
+
+            <div class="controls">
+                <select id="start-location">
+                    <option value="">Select Start Location</option>
+                    <option value="C205">Room C205</option>
+                    <option value="C206">Room C206</option>
+                    <option value="C207">Room C207</option>
+                    <option value="C208">Room C208</option>
+                    <option value="C209">Room C209</option>
+                    <option value="C210">Room C210</option>
+                    <option value="C201">Room C201</option>
+                    <option value="C202">Room C202</option>
+                    <option value="C203">Room C203</option>
+                    <option value="Hallway">Hallway</option>
+                    <option value="Lab">Machine Learning Lab</option>
+                    <option value="Washroom">Washroom</option>
+                    <option value="Stair_1">Staircase 1</option>
+                    <option value="Stair_2">Staircase 2</option>
+                    <option value="Opening">Opening Area</option>
+                </select>
+                
+                <select id="destination">
+                    <option value="">Select Destination</option>
+                    <option value="C205">Room C205</option>
+                    <option value="C206">Room C206</option>
+                    <option value="C207">Room C207</option>
+                    <option value="C208">Room C208</option>
+                    <option value="C209">Room C209</option>
+                    <option value="C210">Room C210</option>
+                    <option value="C201">Room C201</option>
+                    <option value="C202">Room C202</option>
+                    <option value="C203">Room C203</option>
+                    <option value="Hallway">Hallway</option>
+                    <option value="Lab">Machine Learning Lab</option>
+                    <option value="Washroom">Washroom</option>
+                    <option value="Stair_1">Staircase 1</option>
+                    <option value="Stair_2">Staircase 2</option>
+                    <option value="Opening">Opening Area</option>
+                </select>
+                
+                <button id="nav-button" class="btn">Navigate</button>
+            </div>
+
+            <div class="floor-map">
+                <img src="/frontend/images/first_floor_map.png" id="map-image" alt="First Floor Map" style="max-width: 100%; max-height: 500px;">
+                <svg id="path-overlay" width="100%" height="100%"></svg>
+            </div>
+
+            <div id="route-info" class="route-info">
+                <h3>Navigation Info</h3>
+                <p>Select start and destination locations to begin navigation.</p>
+            </div>
+        </div>
+    </main>
+    
+    <script src="/frontend/js/script.js"></script>
+</body>
+</html>

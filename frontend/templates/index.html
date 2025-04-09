@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Indoor Navigation - First Floor</title>
+    <link rel="stylesheet" href="/frontend/css/style.css">
+    <style>
+        /* Reset and base styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Header styles - left and right alignment */
+        .header {
+            background-color: #2c3e50;
+            padding: 1rem 0;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 0;
+        }
+        
+        /* Main content styles - centered */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem 1rem 2rem; /* Reduced top padding */
+        }
+        
+        .hero {
+            text-align: center;
+            margin-top: 0.5rem; /* Reduced margin */
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin: 0.5rem 0 1rem; /* Reduced top margin */
+            font-size: 2rem;
+        }
+        
+        p {
+            color: #7f8c8d;
+            margin-bottom: 1.5rem; /* Reduced margin */
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+        
+        /* Search box styles */
+        .search-box {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.5rem; /* Reduced margin */
+        }
+        
+        .search-box input {
+            padding: 0.8rem 1rem;
+            width: 350px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+            font-size: 1rem;
+        }
+        
+        .search-box button {
+            padding: 0 1.5rem;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        
+        /* Map container styles */
+        .map-container {
+            margin: 0 auto 1.5rem; /* Reduced margin */
+            max-width: 600px;
+        }
+        
+        .map-preview {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .map-preview:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .map-preview img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .map-title {
+            margin: 0.8rem 0 0; /* Reduced margin */
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.2rem;
+        }
+        
+        /* Button styles */
+        .btn {
+            display: inline-block;
+            padding: 0.9rem 2.2rem;
+            background-color: #2ecc71;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+            margin-top: 0.5rem; /* Reduced margin */
+        }
+        
+        .btn:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">WELCOME</div>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/map">Interactive Map</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>AI Powered Indoor Navigation</h1>
+            <p>Find the quickest route using our AI-powered navigation system. Perfect for students and visitors.</p>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Search locations...">
+                <button>Search</button>
+            </div>
+            
+            <div class="map-container">
+                <div class="map-preview">
+                    <img src="/frontend/images/department_map.jpg" alt="Department Map">
+                </div>
+                <div class="map-title">COMPUTER SCIENCE BLOCK</div>
+            </div>
+            
+            <a href="/map" class="btn">Launch Interactive Map</a>
+        </section>
+    </main>
+</body>
+</html>
